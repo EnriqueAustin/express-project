@@ -14,4 +14,10 @@ const contactSchema = mongoose.Schema({
         type: String,
         require: [true, "Plase add the contact phone number"],
     },
-});
+},
+{
+    timestamps: true,
+}
+);
+
+module.exports = mongoose.model("Contact", contactSchema);
