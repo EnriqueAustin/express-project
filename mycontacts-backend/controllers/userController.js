@@ -65,7 +65,7 @@ const loginUser = asyncHandler(async (req, res) => {
     } else {
         res.status(401);
         throw new ErrorEvent("email or password is not valid");
-    }
+    };
     res.json({ message: "Login user" });
 });
 
